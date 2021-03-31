@@ -33,6 +33,6 @@ struct AppFeature {
 struct AppFeaturesDataSource {
     
     let appFeatures = [
-        AppFeature(index: 1, title: "sample", appName: "sampleApp")
+        AppFeature(index: 1, title: "SpinningButton", appName: "TikTok")
     ]
 }

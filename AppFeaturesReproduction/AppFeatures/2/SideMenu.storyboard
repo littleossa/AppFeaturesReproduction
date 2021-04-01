@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qgK-7C-pJK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Menu View Controller-->
+        <scene sceneID="rDE-x0-Plp">
+            <objects>
+                <viewController id="c6h-S2-XJ3" customClass="SideMenuViewController" customModule="AppFeaturesReproduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tRD-J8-7dZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosebleed" translatesAutoresizingMaskIntoConstraints="NO" id="Bsa-a7-arZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6m9-fx-Cyc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="leading" secondItem="6m9-fx-Cyc" secondAttribute="leading" id="27H-j9-1cE"/>
+                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="top" secondItem="6m9-fx-Cyc" secondAttribute="top" id="Ngr-qV-cj9"/>
+                            <constraint firstItem="6m9-fx-Cyc" firstAttribute="trailing" secondItem="Bsa-a7-arZ" secondAttribute="trailing" id="a6S-mZ-Xlj"/>
+                            <constraint firstItem="6m9-fx-Cyc" firstAttribute="bottom" secondItem="Bsa-a7-arZ" secondAttribute="bottom" id="ena-mG-voK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wEf-FN-WtR">
+                        <barButtonItem key="leftBarButtonItem" title="Side menu" id="SNZ-nP-eEi">
+                            <connections>
+                                <action selector="didTapSideMenuButton:" destination="c6h-S2-XJ3" id="qg1-YN-FXH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vb7-po-Aot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="102"/>
+        </scene>
+        <!--Welcome Side Menu View Controller-->
+        <scene sceneID="z6k-Pr-pAM">
+            <objects>
+                <viewController id="qgK-7C-pJK" customClass="WelcomeSideMenuViewController" customModule="AppFeaturesReproduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yq5-mB-wxF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56r-Re-JL0">
+                                <rect key="frame" x="62" y="373.5" width="290" height="149.5"/>
+                                <string key="text">WelcomeSide menu</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="6"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s1r-eu-81W"/>
+                        <color key="backgroundColor" red="0.38329285814668601" green="0.87032297160303029" blue="0.84586766760332599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="56r-Re-JL0" firstAttribute="centerY" secondItem="Yq5-mB-wxF" secondAttribute="centerY" id="25l-8r-v8f"/>
+                            <constraint firstItem="56r-Re-JL0" firstAttribute="centerX" secondItem="Yq5-mB-wxF" secondAttribute="centerX" id="c6N-aQ-ftY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="20t-al-258" kind="presentation" identifier="SideMenu" modalPresentationStyle="fullScreen" id="yDn-eU-dvY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebN-MB-jrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1262.3188405797102" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6ip-Ud-bdc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="20t-al-258" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="HHE-LT-wrV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGp-SD-rR4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c6h-S2-XJ3" kind="relationship" relationship="rootViewController" id="0CD-uD-5j1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W95-tu-ZLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475.36231884057975" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nosebleed" width="5000" height="5000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

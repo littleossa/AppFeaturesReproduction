@@ -15,16 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="dpu-tq-tTm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgF-Nk-acs">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4Af-ZI-Xes"/>
+                                    <constraint firstAttribute="width" constant="100" id="lvM-Re-wWh"/>
+                                </constraints>
+                                <state key="normal" image="nosebleed"/>
+                                <connections>
+                                    <action selector="didTapSpinningButton:" destination="wqn-3U-iQo" eventType="touchUpInside" id="Bnc-8c-YTP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Bn3-d0-9Qp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RgF-Nk-acs" firstAttribute="centerY" secondItem="dpu-tq-tTm" secondAttribute="centerY" id="Xeo-kb-nIl"/>
+                            <constraint firstItem="RgF-Nk-acs" firstAttribute="centerX" secondItem="dpu-tq-tTm" secondAttribute="centerX" id="j0w-9e-fBz"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="spinningButton" destination="RgF-Nk-acs" id="6aO-qC-UQN"/>
                         <segue destination="mix-to-zMP" kind="presentation" identifier="next" id="1OC-r3-hQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWD-A9-Dai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="105"/>
+            <point key="canvasLocation" x="140.57971014492756" y="104.46428571428571"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ssl-K5-zzx">

@@ -9,5 +9,15 @@ iOS学習の為に毎日ひとつアプリをダウンロードして、その�
 |2 | SideMenu |サイドメニューが開くよ|![SideMenuDemo](https://user-images.githubusercontent.com/67716751/113375046-88def000-93a9-11eb-80dc-46d9724f0f68.GIF)|
 |3 |||
 
+# Requirement
+ 
+* SideMenu
+ 
+# Installation
+  
+```
+pod 'SideMenu', '~> 6.0'
+```
+
 # Start date
 2021/4/1 ~

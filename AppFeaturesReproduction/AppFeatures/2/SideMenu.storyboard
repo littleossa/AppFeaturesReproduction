@@ -50,22 +50,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56r-Re-JL0">
-                                <rect key="frame" x="62" y="373.5" width="290" height="149.5"/>
-                                <string key="text">Welcome
-Side menu</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="0.0" height="6"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jF-VP-gUH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Title" id="55s-dF-xcL"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="stoppedNosebleed" translatesAutoresizingMaskIntoConstraints="NO" id="lBh-TV-V5K">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s1r-eu-81W"/>
-                        <color key="backgroundColor" red="0.38329285814668601" green="0.87032297160303029" blue="0.84586766760332599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="56r-Re-JL0" firstAttribute="centerY" secondItem="Yq5-mB-wxF" secondAttribute="centerY" id="25l-8r-v8f"/>
-                            <constraint firstItem="56r-Re-JL0" firstAttribute="centerX" secondItem="Yq5-mB-wxF" secondAttribute="centerX" id="c6N-aQ-ftY"/>
+                            <constraint firstItem="4jF-VP-gUH" firstAttribute="leading" secondItem="Yq5-mB-wxF" secondAttribute="leading" id="B0g-Td-CfY"/>
+                            <constraint firstItem="lBh-TV-V5K" firstAttribute="leading" secondItem="s1r-eu-81W" secondAttribute="leading" id="Fsl-8Z-4kh"/>
+                            <constraint firstItem="lBh-TV-V5K" firstAttribute="trailing" secondItem="s1r-eu-81W" secondAttribute="trailing" id="RCk-EF-8vy"/>
+                            <constraint firstAttribute="trailing" secondItem="4jF-VP-gUH" secondAttribute="trailing" id="TIb-sh-niz"/>
+                            <constraint firstItem="lBh-TV-V5K" firstAttribute="top" secondItem="4jF-VP-gUH" secondAttribute="bottom" id="Y4v-YM-OeW"/>
+                            <constraint firstItem="4jF-VP-gUH" firstAttribute="top" secondItem="s1r-eu-81W" secondAttribute="top" id="jgt-V6-MgX"/>
+                            <constraint firstAttribute="bottom" secondItem="lBh-TV-V5K" secondAttribute="bottom" id="pHC-5b-OWm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,6 +104,7 @@ Side menu</string>
     </scenes>
     <resources>
         <image name="nosebleed" width="5000" height="5000"/>
+        <image name="stoppedNosebleed" width="5000" height="5000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

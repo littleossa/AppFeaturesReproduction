@@ -17,7 +17,9 @@
 		9717BEEF26120890009EC6E4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717BEEE26120890009EC6E4 /* RootViewController.swift */; };
 		9726E7CD261518B70036A672 /* SpinningButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9726E7CC261518B70036A672 /* SpinningButton.storyboard */; };
 		9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */; };
-		97779CF0261680A800B4AFE6 /* WelcomeSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CEF261680A700B4AFE6 /* WelcomeSideMenuViewController.swift */; };
+		97779CF32616AC2100B4AFE6 /* MockSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CF22616AC2100B4AFE6 /* MockSplashViewController.swift */; };
+		97779CF72616AF3100B4AFE6 /* SideMenuListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CF62616AF3100B4AFE6 /* SideMenuListTableViewController.swift */; };
+		97779CFA2616AFFF00B4AFE6 /* SideMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CF92616AFFF00B4AFE6 /* SideMenuList.swift */; };
 		97B2AEDD261675B9008943F3 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B2AEDC261675B9008943F3 /* SideMenu.storyboard */; };
 		97B2AEE026167602008943F3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B2AEDF26167602008943F3 /* SideMenuViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +38,9 @@
 		9717BEEE26120890009EC6E4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9726E7CC261518B70036A672 /* SpinningButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpinningButton.storyboard; sourceTree = "<group>"; };
 		9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningButtonViewController.swift; sourceTree = "<group>"; };
-		97779CEF261680A700B4AFE6 /* WelcomeSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSideMenuViewController.swift; sourceTree = "<group>"; };
+		97779CF22616AC2100B4AFE6 /* MockSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSplashViewController.swift; sourceTree = "<group>"; };
+		97779CF62616AF3100B4AFE6 /* SideMenuListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuListTableViewController.swift; sourceTree = "<group>"; };
+		97779CF92616AFFF00B4AFE6 /* SideMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuList.swift; sourceTree = "<group>"; };
 		97B2AEDC261675B9008943F3 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		97B2AEDF26167602008943F3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		D2AB97EA0FCE4498B8CE6F3A /* Pods-AppFeaturesReproduction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFeaturesReproduction.release.xcconfig"; path = "Target Support Files/Pods-AppFeaturesReproduction/Pods-AppFeaturesReproduction.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +124,9 @@
 			children = (
 				97B2AEDC261675B9008943F3 /* SideMenu.storyboard */,
 				97B2AEDF26167602008943F3 /* SideMenuViewController.swift */,
-				97779CEF261680A700B4AFE6 /* WelcomeSideMenuViewController.swift */,
+				97779CF62616AF3100B4AFE6 /* SideMenuListTableViewController.swift */,
+				97779CF92616AFFF00B4AFE6 /* SideMenuList.swift */,
+				97779CF22616AC2100B4AFE6 /* MockSplashViewController.swift */,
 			);
 			path = 2;
 			sourceTree = "<group>";
@@ -249,11 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97779CF0261680A800B4AFE6 /* WelcomeSideMenuViewController.swift in Sources */,
 				9717BEC92612022D009EC6E4 /* AppDelegate.swift in Sources */,
 				9717BEEB26120595009EC6E4 /* DataSource.swift in Sources */,
 				9717BEEF26120890009EC6E4 /* RootViewController.swift in Sources */,
 				9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */,
+				97779CF32616AC2100B4AFE6 /* MockSplashViewController.swift in Sources */,
+				97779CF72616AF3100B4AFE6 /* SideMenuListTableViewController.swift in Sources */,
+				97779CFA2616AFFF00B4AFE6 /* SideMenuList.swift in Sources */,
 				97B2AEE026167602008943F3 /* SideMenuViewController.swift in Sources */,
 				9717BECB2612022D009EC6E4 /* SceneDelegate.swift in Sources */,
 			);

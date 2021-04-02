@@ -13,24 +13,25 @@
             <objects>
                 <viewController id="c6h-S2-XJ3" customClass="SideMenuViewController" customModule="AppFeaturesReproduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tRD-J8-7dZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosebleed" translatesAutoresizingMaskIntoConstraints="NO" id="Bsa-a7-arZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6m9-fx-Cyc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="leading" secondItem="6m9-fx-Cyc" secondAttribute="leading" id="27H-j9-1cE"/>
-                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="top" secondItem="6m9-fx-Cyc" secondAttribute="top" id="Ngr-qV-cj9"/>
-                            <constraint firstItem="6m9-fx-Cyc" firstAttribute="trailing" secondItem="Bsa-a7-arZ" secondAttribute="trailing" id="a6S-mZ-Xlj"/>
-                            <constraint firstItem="6m9-fx-Cyc" firstAttribute="bottom" secondItem="Bsa-a7-arZ" secondAttribute="bottom" id="ena-mG-voK"/>
+                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="top" secondItem="6m9-fx-Cyc" secondAttribute="top" id="BER-Wd-xae"/>
+                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="leading" secondItem="6m9-fx-Cyc" secondAttribute="leading" id="MLu-db-IcZ"/>
+                            <constraint firstItem="Bsa-a7-arZ" firstAttribute="trailing" secondItem="6m9-fx-Cyc" secondAttribute="trailing" id="cpV-5s-1oS"/>
+                            <constraint firstAttribute="bottom" secondItem="Bsa-a7-arZ" secondAttribute="bottom" id="loh-YZ-m7k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wEf-FN-WtR">
-                        <barButtonItem key="leftBarButtonItem" title="Side menu" id="SNZ-nP-eEi">
+                        <barButtonItem key="leftBarButtonItem" title="← Side menu" id="SNZ-nP-eEi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTapSideMenuButton:" destination="c6h-S2-XJ3" id="qg1-YN-FXH"/>
                             </connections>
@@ -41,17 +42,18 @@
             </objects>
             <point key="canvasLocation" x="349" y="102"/>
         </scene>
-        <!--Welcome Side Menu View Controller-->
+        <!--Mock Splash View Controller-->
         <scene sceneID="z6k-Pr-pAM">
             <objects>
-                <viewController id="qgK-7C-pJK" customClass="WelcomeSideMenuViewController" customModule="AppFeaturesReproduction" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qgK-7C-pJK" customClass="MockSplashViewController" customModule="AppFeaturesReproduction" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yq5-mB-wxF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56r-Re-JL0">
                                 <rect key="frame" x="62" y="373.5" width="290" height="149.5"/>
-                                <string key="text">WelcomeSide menu</string>
+                                <string key="text">Welcome
+Side menu</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +69,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="20t-al-258" kind="presentation" identifier="SideMenu" modalPresentationStyle="fullScreen" id="yDn-eU-dvY"/>
+                        <segue destination="20t-al-258" kind="presentation" identifier="SideMenu" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yDn-eU-dvY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebN-MB-jrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,9 +82,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="20t-al-258" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="HHE-LT-wrV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGp-SD-rR4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="FGp-SD-rR4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

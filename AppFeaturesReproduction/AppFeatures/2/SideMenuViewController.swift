@@ -15,10 +15,12 @@ class SideMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sideMenu = SideMenuNavigationController(rootViewController: UIViewController())
+        sideMenu = SideMenuNavigationController(rootViewController: SideMenuListTableViewController())
         sideMenu?.leftSide = true
-        sideMenu?.sideMenuManager.addPanGestureToPresent(toView: self.view)
+        sideMenu?.setNavigationBarHidden(true, animated: false)
         
+        sideMenu?.sideMenuManager.leftMenuNavigationController = sideMenu
+        sideMenu?.sideMenuManager.addPanGestureToPresent(toView: self.view)
     }
     
     @IBAction func didTapSideMenuButton(_ sender: UIBarButtonItem) {

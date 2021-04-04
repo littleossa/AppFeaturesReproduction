@@ -19,6 +19,9 @@
 		9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */; };
 		972E42EF2619303E00470EA4 /* SlidingTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E42EE2619303E00470EA4 /* SlidingTabs.swift */; };
 		972E42F2261962B200470EA4 /* SlidingTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E42F1261962B200470EA4 /* SlidingTabCollectionViewCell.swift */; };
+		975DAEC0261A5E320076FA6B /* AutoSideScrollingText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975DAEBF261A5E320076FA6B /* AutoSideScrollingText.storyboard */; };
+		975DAEC3261A5E470076FA6B /* AutoSideScrollingTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975DAEC2261A5E470076FA6B /* AutoSideScrollingTextViewController.swift */; };
+		975DAECF261A6A170076FA6B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975DAECE261A6A170076FA6B /* UIView+.swift */; };
 		97779CF32616AC2100B4AFE6 /* MockSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CF22616AC2100B4AFE6 /* MockSplashViewController.swift */; };
 		97779CF72616AF3100B4AFE6 /* SideMenuListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CF62616AF3100B4AFE6 /* SideMenuListTableViewController.swift */; };
 		97779CFA2616AFFF00B4AFE6 /* SideMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97779CF92616AFFF00B4AFE6 /* SideMenuList.swift */; };
@@ -44,6 +47,9 @@
 		9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningButtonViewController.swift; sourceTree = "<group>"; };
 		972E42EE2619303E00470EA4 /* SlidingTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabs.swift; sourceTree = "<group>"; };
 		972E42F1261962B200470EA4 /* SlidingTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		975DAEBF261A5E320076FA6B /* AutoSideScrollingText.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoSideScrollingText.storyboard; sourceTree = "<group>"; };
+		975DAEC2261A5E470076FA6B /* AutoSideScrollingTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSideScrollingTextViewController.swift; sourceTree = "<group>"; };
+		975DAECE261A6A170076FA6B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		97779CF22616AC2100B4AFE6 /* MockSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSplashViewController.swift; sourceTree = "<group>"; };
 		97779CF62616AF3100B4AFE6 /* SideMenuListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuListTableViewController.swift; sourceTree = "<group>"; };
 		97779CF92616AFFF00B4AFE6 /* SideMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuList.swift; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 				9717BEF226121244009EC6E4 /* 1 */,
 				97B2AEDB261675A4008943F3 /* 2 */,
 				97FA8B552617C51300A8F15E /* 3 */,
+				975DAEBE261A5DF70076FA6B /* 4 */,
 			);
 			path = AppFeatures;
 			sourceTree = "<group>";
@@ -126,6 +133,16 @@
 				9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */,
 			);
 			path = 1;
+			sourceTree = "<group>";
+		};
+		975DAEBE261A5DF70076FA6B /* 4 */ = {
+			isa = PBXGroup;
+			children = (
+				975DAECE261A6A170076FA6B /* UIView+.swift */,
+				975DAEBF261A5E320076FA6B /* AutoSideScrollingText.storyboard */,
+				975DAEC2261A5E470076FA6B /* AutoSideScrollingTextViewController.swift */,
+			);
+			path = 4;
 			sourceTree = "<group>";
 		};
 		97B2AEDB261675A4008943F3 /* 2 */ = {
@@ -219,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9717BEE326120343009EC6E4 /* Main.storyboard in Resources */,
+				975DAEC0261A5E320076FA6B /* AutoSideScrollingText.storyboard in Resources */,
 				97FA8B572617C60900A8F15E /* SlidingTabBar.storyboard in Resources */,
 				97B2AEDD261675B9008943F3 /* SideMenu.storyboard in Resources */,
 				9717BED52612022E009EC6E4 /* LaunchScreen.storyboard in Resources */,
@@ -278,6 +296,7 @@
 			files = (
 				9717BEC92612022D009EC6E4 /* AppDelegate.swift in Sources */,
 				97FA8B6F2617D09E00A8F15E /* SlidingTabBarViewController.swift in Sources */,
+				975DAECF261A6A170076FA6B /* UIView+.swift in Sources */,
 				9717BEEB26120595009EC6E4 /* DataSource.swift in Sources */,
 				9717BEEF26120890009EC6E4 /* RootViewController.swift in Sources */,
 				9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */,
@@ -285,6 +304,7 @@
 				97779CF32616AC2100B4AFE6 /* MockSplashViewController.swift in Sources */,
 				972E42F2261962B200470EA4 /* SlidingTabCollectionViewCell.swift in Sources */,
 				97779CF72616AF3100B4AFE6 /* SideMenuListTableViewController.swift in Sources */,
+				975DAEC3261A5E470076FA6B /* AutoSideScrollingTextViewController.swift in Sources */,
 				97779CFA2616AFFF00B4AFE6 /* SideMenuList.swift in Sources */,
 				97B2AEE026167602008943F3 /* SideMenuViewController.swift in Sources */,
 				9717BECB2612022D009EC6E4 /* SceneDelegate.swift in Sources */,

@@ -13,7 +13,7 @@ class SlidingTabBarViewController: UIViewController {
     @IBOutlet weak var cellBottomColorView: UIView!
     @IBOutlet weak var nosebleedImage: UIImageView!
 
-    let slidingTabs = SlidingTabs().tabs
+    var slidingTabs = SlidingTabs().tabs
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,5 +50,11 @@ extension SlidingTabBarViewController: UICollectionViewDelegate {
         cellBottomColorView.backgroundColor = color
         nosebleedImage.backgroundColor = color
         slidingTabCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+                
+        for i in 0...slidingTabs.count - 1 {
+            slidingTabs[i].isTapped = false
+        }
+        slidingTabs[indexPath.row].isTapped = true
+        slidingTabCollectionView.reloadData()
     }
 }

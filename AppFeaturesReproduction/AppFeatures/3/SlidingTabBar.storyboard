@@ -18,54 +18,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RkQ-po-qfe">
-                                <rect key="frame" x="0.0" y="64" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="eFr-Bw-zQB"/>
+                                    <constraint firstAttribute="height" constant="70" id="eFr-Bw-zQB"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VJK-yh-7Rd">
-                                    <size key="itemSize" width="100" height="50"/>
+                                    <size key="itemSize" width="100" height="70"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="hBK-IE-0iV" customClass="SlidingTabCollectionViewCell" customModule="AppFeaturesReproduction" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="5" width="100" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lVq-gR-h8p">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-uP-SdO">
-                                                    <rect key="frame" x="27" y="12" width="46" height="19"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <size key="shadowOffset" width="0.0" height="1"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YT-iF-Sjh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oP-fEj">
+                                                    <rect key="frame" x="0.0" y="10" width="100" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlS-uP-SdO">
+                                                            <rect key="frame" x="27" y="10" width="46" height="19"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="VlS-uP-SdO" firstAttribute="centerX" secondItem="mRC-oP-fEj" secondAttribute="centerX" id="2jC-kD-PwD"/>
+                                                        <constraint firstItem="VlS-uP-SdO" firstAttribute="top" secondItem="mRC-oP-fEj" secondAttribute="top" constant="10" id="YbL-cv-IcO"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="VlS-uP-SdO" firstAttribute="top" secondItem="lVq-gR-h8p" secondAttribute="top" constant="12" id="u8G-ez-Hd4"/>
-                                                <constraint firstItem="VlS-uP-SdO" firstAttribute="centerX" secondItem="lVq-gR-h8p" secondAttribute="centerX" id="xQr-RC-qpT"/>
+                                                <constraint firstAttribute="trailing" secondItem="1YT-iF-Sjh" secondAttribute="trailing" id="CCu-Wh-wdY"/>
+                                                <constraint firstAttribute="trailing" secondItem="mRC-oP-fEj" secondAttribute="trailing" id="DHY-pQ-QxW"/>
+                                                <constraint firstItem="mRC-oP-fEj" firstAttribute="leading" secondItem="lVq-gR-h8p" secondAttribute="leading" id="Kq2-LJ-4zR"/>
+                                                <constraint firstAttribute="bottom" secondItem="1YT-iF-Sjh" secondAttribute="bottom" id="QnH-ie-TPO"/>
+                                                <constraint firstItem="mRC-oP-fEj" firstAttribute="top" secondItem="lVq-gR-h8p" secondAttribute="top" constant="10" id="fmk-L2-Ta4"/>
+                                                <constraint firstAttribute="bottom" secondItem="mRC-oP-fEj" secondAttribute="bottom" id="hof-CX-M2X"/>
+                                                <constraint firstItem="1YT-iF-Sjh" firstAttribute="leading" secondItem="lVq-gR-h8p" secondAttribute="leading" id="jGD-XJ-7Fu"/>
+                                                <constraint firstItem="1YT-iF-Sjh" firstAttribute="top" secondItem="lVq-gR-h8p" secondAttribute="top" id="vzg-F9-vG6"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="VlS-uP-SdO" id="Of1-kK-Hqh"/>
+                                            <outlet property="selectedTabView" destination="1YT-iF-Sjh" id="dyh-Da-oRN"/>
+                                            <outlet property="tabView" destination="mRC-oP-fEj" id="uAa-8K-DOT"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWt-dr-EWR">
-                                <rect key="frame" x="0.0" y="114" width="414" height="10"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="10"/>
                                 <color key="backgroundColor" red="1" green="0.91372549530000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="nO9-Tu-TAY"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosebleedClear" translatesAutoresizingMaskIntoConstraints="NO" id="BcM-AE-3TN">
-                                <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                                <rect key="frame" x="0.0" y="134" width="414" height="762"/>
                                 <color key="backgroundColor" red="1" green="0.91372549530000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                         </subviews>
@@ -99,6 +121,9 @@
         <image name="nosebleedClear" width="5000" height="5000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

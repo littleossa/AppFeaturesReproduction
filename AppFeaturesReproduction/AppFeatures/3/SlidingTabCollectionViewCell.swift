@@ -9,11 +9,16 @@ import UIKit
 
 class SlidingTabCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var selectedTabView: UIView!
+    @IBOutlet weak var tabView: UIView!
     @IBOutlet weak var label: UILabel!
         
     func setCell(by tab: Tab) {
-        self.layer.cornerRadius = 10
-        self.backgroundColor = tab.color
+        self.tabView.layer.cornerRadius = 10
+        self.selectedTabView.layer.cornerRadius = 10
+        self.selectedTabView.isHidden = !tab.isTapped
+        self.tabView.backgroundColor = tab.color
+        self.selectedTabView.backgroundColor = tab.color
         self.label.text = tab.title
     }
 }

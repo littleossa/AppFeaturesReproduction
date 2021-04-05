@@ -29,6 +29,9 @@
 		97B2AEE026167602008943F3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B2AEDF26167602008943F3 /* SideMenuViewController.swift */; };
 		97FA8B572617C60900A8F15E /* SlidingTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FA8B562617C60900A8F15E /* SlidingTabBar.storyboard */; };
 		97FA8B6F2617D09E00A8F15E /* SlidingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA8B6E2617D09E00A8F15E /* SlidingTabBarViewController.swift */; };
+		97FB52E1261BBABD005DF160 /* RotatingIndicator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FB52E0261BBABD005DF160 /* RotatingIndicator.storyboard */; };
+		97FB52E4261BBACB005DF160 /* RotatingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB52E3261BBACB005DF160 /* RotatingIndicatorViewController.swift */; };
+		97FB52E7261BBB54005DF160 /* RotatngActiveIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB52E6261BBB54005DF160 /* RotatngActiveIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		97B2AEDF26167602008943F3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		97FA8B562617C60900A8F15E /* SlidingTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SlidingTabBar.storyboard; sourceTree = "<group>"; };
 		97FA8B6E2617D09E00A8F15E /* SlidingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabBarViewController.swift; sourceTree = "<group>"; };
+		97FB52E0261BBABD005DF160 /* RotatingIndicator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RotatingIndicator.storyboard; sourceTree = "<group>"; };
+		97FB52E3261BBACB005DF160 /* RotatingIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingIndicatorViewController.swift; sourceTree = "<group>"; };
+		97FB52E6261BBB54005DF160 /* RotatngActiveIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatngActiveIndicatorView.swift; sourceTree = "<group>"; };
 		D2AB97EA0FCE4498B8CE6F3A /* Pods-AppFeaturesReproduction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFeaturesReproduction.release.xcconfig"; path = "Target Support Files/Pods-AppFeaturesReproduction/Pods-AppFeaturesReproduction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +128,7 @@
 				97B2AEDB261675A4008943F3 /* 2 */,
 				97FA8B552617C51300A8F15E /* 3 */,
 				975DAEBE261A5DF70076FA6B /* 4 */,
+				97FB52DF261BBA8E005DF160 /* 5 */,
 			);
 			path = AppFeatures;
 			sourceTree = "<group>";
@@ -166,6 +173,16 @@
 				97FA8B6E2617D09E00A8F15E /* SlidingTabBarViewController.swift */,
 			);
 			path = 3;
+			sourceTree = "<group>";
+		};
+		97FB52DF261BBA8E005DF160 /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+				97FB52E0261BBABD005DF160 /* RotatingIndicator.storyboard */,
+				97FB52E6261BBB54005DF160 /* RotatngActiveIndicatorView.swift */,
+				97FB52E3261BBACB005DF160 /* RotatingIndicatorViewController.swift */,
+			);
+			path = 5;
 			sourceTree = "<group>";
 		};
 		C50FD7437568FD002A9433F6 /* Frameworks */ = {
@@ -235,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FB52E1261BBABD005DF160 /* RotatingIndicator.storyboard in Resources */,
 				9717BEE326120343009EC6E4 /* Main.storyboard in Resources */,
 				975DAEC0261A5E320076FA6B /* AutoSideScrollingText.storyboard in Resources */,
 				97FA8B572617C60900A8F15E /* SlidingTabBar.storyboard in Resources */,
@@ -308,6 +326,8 @@
 				97779CFA2616AFFF00B4AFE6 /* SideMenuList.swift in Sources */,
 				97B2AEE026167602008943F3 /* SideMenuViewController.swift in Sources */,
 				9717BECB2612022D009EC6E4 /* SceneDelegate.swift in Sources */,
+				97FB52E4261BBACB005DF160 /* RotatingIndicatorViewController.swift in Sources */,
+				97FB52E7261BBB54005DF160 /* RotatngActiveIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

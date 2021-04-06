@@ -9,15 +9,15 @@ import UIKit
 
 class RotatngActiveIndicatorView: UIView {
     
-    let circle1 = UIImageView(frame: CGRect(x: 20, y: 20, width: 60, height: 60))
-    let circle2 = UIImageView(frame: CGRect(x: 120, y: 20, width: 60, height: 60))
+    let circle1 = UIImageView(frame: CGRect(x: 20, y: 20, width: 90, height: 90))
+    let circle2 = UIImageView(frame: CGRect(x: 120, y: 20, width: 90, height: 90))
     
     var isAnimated = false
     
     let position: [CGRect] = [
-        CGRect(x: 30, y: 20, width: 60, height: 60),
-        CGRect(x: 60, y: 15, width: 70, height: 70),
-        CGRect(x: 110, y: 20, width: 60, height: 60),
+        CGRect(x: 30, y: 20, width: 90, height: 90),
+        CGRect(x: 60, y: 15, width: 110, height: 110),
+        CGRect(x: 110, y: 20, width: 90, height: 90),
         CGRect(x: 60, y: 25, width: 50, height: 50)
     ]
     
@@ -71,7 +71,7 @@ class RotatngActiveIndicatorView: UIView {
                     self.circle1.layer.zPosition = 0
                 }
             default:
-                print("not applicable")
+                print("RotatingActiveIndicator isAnitamated = ", self.isAnimated)
             }
         } completion: { (completed) in
             
@@ -81,7 +81,7 @@ class RotatngActiveIndicatorView: UIView {
             case 3:
                 counter = 0
             default:
-                print("not applicable")
+                print("RotatingActiveIndicator isAnitamated = ", self.isAnimated)
             }
             
             if self.isAnimated {

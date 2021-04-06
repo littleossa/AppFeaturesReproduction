@@ -19,6 +19,7 @@ class RotatingIndicatorViewController: UIViewController {
         dataCommunicationButton.layer.cornerRadius = 20
 
         view.addSubview(rotatingActiveIndicatorView)
+        rotatingActiveIndicatorView.isHidden = true
         NSLayoutConstraint.activate([
             rotatingActiveIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             rotatingActiveIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -29,6 +30,7 @@ class RotatingIndicatorViewController: UIViewController {
     
     @IBAction func didTapStartCommunication(_ sender: UIButton) {
         rotatingActiveIndicatorView.isAnimated = !rotatingActiveIndicatorView.isAnimated
+        rotatingActiveIndicatorView.isHidden = !rotatingActiveIndicatorView.isAnimated
         if rotatingActiveIndicatorView.isAnimated {
             dataCommunicationButton.setTitle("データ通信を終了する", for: .normal)
             rotatingActiveIndicatorView.animate(circle: rotatingActiveIndicatorView.circle1, counter: 1)

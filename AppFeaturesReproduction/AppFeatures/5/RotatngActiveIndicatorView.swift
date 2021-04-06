@@ -71,7 +71,7 @@ class RotatngActiveIndicatorView: UIView {
                     self.circle1.layer.zPosition = 0
                 }
             default:
-                print("RotatingActiveIndicator isAnitamated = ", self.isAnimated)
+                print()
             }
         } completion: { (completed) in
             
@@ -81,7 +81,7 @@ class RotatngActiveIndicatorView: UIView {
             case 3:
                 counter = 0
             default:
-                print("RotatingActiveIndicator isAnitamated = ", self.isAnimated)
+                print()
             }
             
             if self.isAnimated {

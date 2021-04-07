@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Im-RB-Bm5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Octagon Button View Controller-->
+        <scene sceneID="PS2-0P-s2b">
+            <objects>
+                <viewController id="7Im-RB-Bm5" customClass="OctagonButtonViewController" customModule="AppFeaturesReproduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lMN-CF-Ctk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-NG-tp1" customClass="OctagonButton" customModule="AppFeaturesReproduction" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="261.5" width="373" height="373"/>
+                                <color key="backgroundColor" red="0.38329285810000002" green="0.87032297160000005" blue="0.84586766759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FBx-NG-tp1" secondAttribute="height" multiplier="1:1" id="htj-1h-zz4"/>
+                                </constraints>
+                                <state key="normal" image="octagonNosebleed"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotation">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTouchDownButton:" destination="7Im-RB-Bm5" eventType="touchDown" id="NAc-3m-ZxP"/>
+                                    <action selector="didTouchUpInsideButton:" destination="7Im-RB-Bm5" eventType="touchUpInside" id="uE7-d9-rCd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ねぇ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrw-2o-oRc">
+                                <rect key="frame" x="147" y="164.5" width="120.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tapped!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4C-pt-LEz">
+                                <rect key="frame" x="167" y="644.5" width="80.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UTp-V8-J2D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y4C-pt-LEz" firstAttribute="centerX" secondItem="lMN-CF-Ctk" secondAttribute="centerX" id="D2K-pV-E9c"/>
+                            <constraint firstItem="FBx-NG-tp1" firstAttribute="top" secondItem="Rrw-2o-oRc" secondAttribute="bottom" constant="25" id="KpN-nR-WaP"/>
+                            <constraint firstItem="FBx-NG-tp1" firstAttribute="centerX" secondItem="lMN-CF-Ctk" secondAttribute="centerX" id="cBy-tm-sMD"/>
+                            <constraint firstItem="y4C-pt-LEz" firstAttribute="top" secondItem="FBx-NG-tp1" secondAttribute="bottom" constant="10" id="cwN-ti-KA5"/>
+                            <constraint firstItem="FBx-NG-tp1" firstAttribute="width" secondItem="lMN-CF-Ctk" secondAttribute="width" multiplier="0.9" id="dW7-cv-qCw"/>
+                            <constraint firstItem="Rrw-2o-oRc" firstAttribute="centerX" secondItem="lMN-CF-Ctk" secondAttribute="centerX" id="gjZ-DM-b5m"/>
+                            <constraint firstItem="FBx-NG-tp1" firstAttribute="centerY" secondItem="lMN-CF-Ctk" secondAttribute="centerY" id="sTX-t5-n2c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Rrw-2o-oRc" id="h0y-fk-WsS"/>
+                        <outlet property="tapLabel" destination="y4C-pt-LEz" id="mey-vn-Kow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ht-gj-H4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="octagonNosebleed" width="5000" height="5000"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

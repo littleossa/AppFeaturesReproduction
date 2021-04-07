@@ -19,6 +19,9 @@
 		9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */; };
 		972E42EF2619303E00470EA4 /* SlidingTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E42EE2619303E00470EA4 /* SlidingTabs.swift */; };
 		972E42F2261962B200470EA4 /* SlidingTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E42F1261962B200470EA4 /* SlidingTabCollectionViewCell.swift */; };
+		973773E0261D1284005CFF7B /* OctagonButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973773DF261D1284005CFF7B /* OctagonButton.storyboard */; };
+		973773E3261D12A1005CFF7B /* OctagonButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973773E2261D12A1005CFF7B /* OctagonButtonViewController.swift */; };
+		973773ED261D1719005CFF7B /* OctagonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973773EC261D1719005CFF7B /* OctagonButton.swift */; };
 		975DAEC0261A5E320076FA6B /* AutoSideScrollingText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975DAEBF261A5E320076FA6B /* AutoSideScrollingText.storyboard */; };
 		975DAEC3261A5E470076FA6B /* AutoSideScrollingTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975DAEC2261A5E470076FA6B /* AutoSideScrollingTextViewController.swift */; };
 		975DAECF261A6A170076FA6B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975DAECE261A6A170076FA6B /* UIView+.swift */; };
@@ -50,6 +53,9 @@
 		9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningButtonViewController.swift; sourceTree = "<group>"; };
 		972E42EE2619303E00470EA4 /* SlidingTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabs.swift; sourceTree = "<group>"; };
 		972E42F1261962B200470EA4 /* SlidingTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		973773DF261D1284005CFF7B /* OctagonButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OctagonButton.storyboard; sourceTree = "<group>"; };
+		973773E2261D12A1005CFF7B /* OctagonButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctagonButtonViewController.swift; sourceTree = "<group>"; };
+		973773EC261D1719005CFF7B /* OctagonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctagonButton.swift; sourceTree = "<group>"; };
 		975DAEBF261A5E320076FA6B /* AutoSideScrollingText.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoSideScrollingText.storyboard; sourceTree = "<group>"; };
 		975DAEC2261A5E470076FA6B /* AutoSideScrollingTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSideScrollingTextViewController.swift; sourceTree = "<group>"; };
 		975DAECE261A6A170076FA6B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 				97FA8B552617C51300A8F15E /* 3 */,
 				975DAEBE261A5DF70076FA6B /* 4 */,
 				97FB52DF261BBA8E005DF160 /* 5 */,
+				973773DE261D126C005CFF7B /* 6 */,
 			);
 			path = AppFeatures;
 			sourceTree = "<group>";
@@ -140,6 +147,16 @@
 				9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */,
 			);
 			path = 1;
+			sourceTree = "<group>";
+		};
+		973773DE261D126C005CFF7B /* 6 */ = {
+			isa = PBXGroup;
+			children = (
+				973773DF261D1284005CFF7B /* OctagonButton.storyboard */,
+				973773EC261D1719005CFF7B /* OctagonButton.swift */,
+				973773E2261D12A1005CFF7B /* OctagonButtonViewController.swift */,
+			);
+			path = 6;
 			sourceTree = "<group>";
 		};
 		975DAEBE261A5DF70076FA6B /* 4 */ = {
@@ -253,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97FB52E1261BBABD005DF160 /* RotatingIndicator.storyboard in Resources */,
+				973773E0261D1284005CFF7B /* OctagonButton.storyboard in Resources */,
 				9717BEE326120343009EC6E4 /* Main.storyboard in Resources */,
 				975DAEC0261A5E320076FA6B /* AutoSideScrollingText.storyboard in Resources */,
 				97FA8B572617C60900A8F15E /* SlidingTabBar.storyboard in Resources */,
@@ -316,10 +334,12 @@
 				97FA8B6F2617D09E00A8F15E /* SlidingTabBarViewController.swift in Sources */,
 				975DAECF261A6A170076FA6B /* UIView+.swift in Sources */,
 				9717BEEB26120595009EC6E4 /* DataSource.swift in Sources */,
+				973773ED261D1719005CFF7B /* OctagonButton.swift in Sources */,
 				9717BEEF26120890009EC6E4 /* RootViewController.swift in Sources */,
 				9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */,
 				972E42EF2619303E00470EA4 /* SlidingTabs.swift in Sources */,
 				97779CF32616AC2100B4AFE6 /* MockSplashViewController.swift in Sources */,
+				973773E3261D12A1005CFF7B /* OctagonButtonViewController.swift in Sources */,
 				972E42F2261962B200470EA4 /* SlidingTabCollectionViewCell.swift in Sources */,
 				97779CF72616AF3100B4AFE6 /* SideMenuListTableViewController.swift in Sources */,
 				975DAEC3261A5E470076FA6B /* AutoSideScrollingTextViewController.swift in Sources */,

@@ -38,6 +38,7 @@ struct AppFeaturesDataSource {
         AppFeature(index: 3, title: "SlidingTabBar", appName: "SmartNews"),
         AppFeature(index: 4, title: "AutoSideScrollingText", appName: "トリマ"),
         AppFeature(index: 5, title: "RotatingIndicator", appName: "Ryan"),
-        AppFeature(index: 6, title: "OctagonButton", appName: "拉麺ひなた")
+        AppFeature(index: 6, title: "OctagonButton", appName: "拉麺ひなた"),
+        AppFeature(index: 7, title: "CarouselAds", appName: "I forgot")
     ]
 }

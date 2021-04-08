@@ -31,6 +31,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchDownButton:" destination="7Im-RB-Bm5" eventType="touchDown" id="NAc-3m-ZxP"/>
+                                    <action selector="didTouchDownButton:" destination="7Im-RB-Bm5" eventType="touchUpInside" id="aUo-Bc-4Gw"/>
                                     <action selector="didTouchUpInsideButton:" destination="7Im-RB-Bm5" eventType="touchUpInside" id="uE7-d9-rCd"/>
                                 </connections>
                             </button>

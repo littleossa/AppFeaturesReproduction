@@ -15,10 +15,6 @@
 		9717BEE326120343009EC6E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9717BEE226120343009EC6E4 /* Main.storyboard */; };
 		9717BEEB26120595009EC6E4 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717BEEA26120595009EC6E4 /* DataSource.swift */; };
 		9717BEEF26120890009EC6E4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717BEEE26120890009EC6E4 /* RootViewController.swift */; };
-		9718FD45261E5CF000DB4E34 /* CarouselAds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9718FD44261E5CF000DB4E34 /* CarouselAds.storyboard */; };
-		9718FD48261E5CFC00DB4E34 /* CarouselAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718FD47261E5CFC00DB4E34 /* CarouselAdsViewController.swift */; };
-		9718FD4B261E61C600DB4E34 /* MockSplashView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718FD4A261E61C600DB4E34 /* MockSplashView2ViewController.swift */; };
-		9718FD52261E664900DB4E34 /* CarouselAdsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718FD51261E664900DB4E34 /* CarouselAdsViewCell.swift */; };
 		9726E7CD261518B70036A672 /* SpinningButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9726E7CC261518B70036A672 /* SpinningButton.storyboard */; };
 		9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */; };
 		972E42EF2619303E00470EA4 /* SlidingTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E42EE2619303E00470EA4 /* SlidingTabs.swift */; };
@@ -53,10 +49,6 @@
 		9717BEE226120343009EC6E4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9717BEEA26120595009EC6E4 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		9717BEEE26120890009EC6E4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		9718FD44261E5CF000DB4E34 /* CarouselAds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarouselAds.storyboard; sourceTree = "<group>"; };
-		9718FD47261E5CFC00DB4E34 /* CarouselAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAdsViewController.swift; sourceTree = "<group>"; };
-		9718FD4A261E61C600DB4E34 /* MockSplashView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSplashView2ViewController.swift; sourceTree = "<group>"; };
-		9718FD51261E664900DB4E34 /* CarouselAdsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAdsViewCell.swift; sourceTree = "<group>"; };
 		9726E7CC261518B70036A672 /* SpinningButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpinningButton.storyboard; sourceTree = "<group>"; };
 		9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningButtonViewController.swift; sourceTree = "<group>"; };
 		972E42EE2619303E00470EA4 /* SlidingTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabs.swift; sourceTree = "<group>"; };
@@ -144,7 +136,6 @@
 				975DAEBE261A5DF70076FA6B /* 4 */,
 				97FB52DF261BBA8E005DF160 /* 5 */,
 				973773DE261D126C005CFF7B /* 6 */,
-				9718FD43261E5C9E00DB4E34 /* 7 */,
 			);
 			path = AppFeatures;
 			sourceTree = "<group>";
@@ -156,17 +147,6 @@
 				9726E7CF261518E10036A672 /* SpinningButtonViewController.swift */,
 			);
 			path = 1;
-			sourceTree = "<group>";
-		};
-		9718FD43261E5C9E00DB4E34 /* 7 */ = {
-			isa = PBXGroup;
-			children = (
-				9718FD44261E5CF000DB4E34 /* CarouselAds.storyboard */,
-				9718FD47261E5CFC00DB4E34 /* CarouselAdsViewController.swift */,
-				9718FD51261E664900DB4E34 /* CarouselAdsViewCell.swift */,
-				9718FD4A261E61C600DB4E34 /* MockSplashView2ViewController.swift */,
-			);
-			path = 7;
 			sourceTree = "<group>";
 		};
 		973773DE261D126C005CFF7B /* 6 */ = {
@@ -292,7 +272,6 @@
 				97FB52E1261BBABD005DF160 /* RotatingIndicator.storyboard in Resources */,
 				973773E0261D1284005CFF7B /* OctagonButton.storyboard in Resources */,
 				9717BEE326120343009EC6E4 /* Main.storyboard in Resources */,
-				9718FD45261E5CF000DB4E34 /* CarouselAds.storyboard in Resources */,
 				975DAEC0261A5E320076FA6B /* AutoSideScrollingText.storyboard in Resources */,
 				97FA8B572617C60900A8F15E /* SlidingTabBar.storyboard in Resources */,
 				97B2AEDD261675B9008943F3 /* SideMenu.storyboard in Resources */,
@@ -358,20 +337,17 @@
 				973773ED261D1719005CFF7B /* OctagonButton.swift in Sources */,
 				9717BEEF26120890009EC6E4 /* RootViewController.swift in Sources */,
 				9726E7D0261518E10036A672 /* SpinningButtonViewController.swift in Sources */,
-				9718FD4B261E61C600DB4E34 /* MockSplashView2ViewController.swift in Sources */,
 				972E42EF2619303E00470EA4 /* SlidingTabs.swift in Sources */,
 				97779CF32616AC2100B4AFE6 /* MockSplashViewController.swift in Sources */,
 				973773E3261D12A1005CFF7B /* OctagonButtonViewController.swift in Sources */,
 				972E42F2261962B200470EA4 /* SlidingTabCollectionViewCell.swift in Sources */,
 				97779CF72616AF3100B4AFE6 /* SideMenuListTableViewController.swift in Sources */,
-				9718FD52261E664900DB4E34 /* CarouselAdsViewCell.swift in Sources */,
 				975DAEC3261A5E470076FA6B /* AutoSideScrollingTextViewController.swift in Sources */,
 				97779CFA2616AFFF00B4AFE6 /* SideMenuList.swift in Sources */,
 				97B2AEE026167602008943F3 /* SideMenuViewController.swift in Sources */,
 				9717BECB2612022D009EC6E4 /* SceneDelegate.swift in Sources */,
 				97FB52E4261BBACB005DF160 /* RotatingIndicatorViewController.swift in Sources */,
 				97FB52E7261BBB54005DF160 /* RotatngActiveIndicatorView.swift in Sources */,
-				9718FD48261E5CFC00DB4E34 /* CarouselAdsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

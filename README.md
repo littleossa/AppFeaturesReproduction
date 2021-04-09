@@ -1,6 +1,5 @@
 # AppFeaturesReproduction
-iOS学習の為に毎日ひとつアプリをダウンロードして、その中から何かひとつだけ機能を模写するチャレンジ
-（平日のみの予定）
+iOS学習の色んなアプリをダウンロードして、その中から何かひとつだけ機能を模写するチャレンジ
 
 # Features
 |  | Title | Summary | Demo |
